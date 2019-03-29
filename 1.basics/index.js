@@ -1,17 +1,19 @@
 console.log('Hello World');
 let interestRate =0.5;
+console.log(interestRate);
 interestRate =1;
 console.log(interestRate);
 
 const constant =1;
 //constant=2;//Is Not Possible as this is a constant
-console.log(constant);
+console.log("Constant " + constant);
 
 let name ='Sajan';
 let age =30;
 let isApplicable = true;
 let firstName = undefined;//If not defined also in that case undefined
 let lastName =null;
+console.log(firstName + " " + lastName);
 
 let person = {
     name :'Sajan',
@@ -21,6 +23,8 @@ let person = {
 person.name='Rocky';
 console.log(person);
 person['name'] = 'Sahu';
+console.log(" Post single quote " + person);
+person['name'] = 'SahuWithout Quote';
 console.log(person);
 
 let setAge = 'age';
@@ -51,3 +55,26 @@ function greet(name,lastName){
 function square(number){
     return number*number;
 }
+
+let value = 'sajan';
+console.log(value);
+changeValue(value);
+function changeValue(str){
+    console.log(str);
+    str='sahu';
+    console.log(str);
+}
+console.log(value);
+
+
+let value1 = 5;
+console.log(value);
+changeValue(value);
+function changeValue(str){
+    console.log(str);
+    str=6;
+    console.log(str);
+}
+console.log(value);
+
+
